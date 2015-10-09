@@ -121,14 +121,14 @@ p {
 
 /* gallery section */
 .l-gallery-categories ul li:hover {
-    background-color: #d66969;
-    border: 1px solid #d66969;
+    background-color: #69BBD6;
+    border: 1px solid #69BBD6;
     color: #fff;
     cursor: pointer;
 }
 
 .l-gallery-section .m-heading-border {
-    background-color: #d66969;
+    background-color: #69BBD6;
 }
 
 .l-gallery-section {
