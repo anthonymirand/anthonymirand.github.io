@@ -114,8 +114,8 @@ var particleSettings = {
 var colors = {
   'red': '#D32542',
   'orange': '#FF7F19',
-	'green': '#27AE60',
-	'blue': '#049CFF',
+  'green': '#27AE60',
+  'blue': '#049CFF',
   'purple': '#9B59B6'
 };
 
