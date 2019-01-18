@@ -10,13 +10,13 @@ var particleSettings = {
       }
     },
     "color": {
-      "value": "#27ae60"
+      "value": "#8e8e8e"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#27ae60"
+        "color": "#8e8e8e"
       },
       "polygon": {
         "nb_sides": 5
@@ -112,20 +112,24 @@ var particleSettings = {
 };
 
 var colors = {
-  'red': '#D32542',
-  'orange': '#FF7F19',
-  'green': '#27AE60',
-  'blue': '#049CFF',
-  'purple': '#9B59B6'
+  "red": "#d32542",
+  "orange": "#ff7f19",
+  "green": "#27ae60",
+  "blue": "#049cff",
+  "purple": "#9b59b6"
 };
 
-var randomColor = colors[Object.keys(colors)[Math.floor(Math.random() * Object.keys(colors).length)]];
+var randomIndex = Math.floor(Math.random() * Object.keys(colors).length);
+var randomKey = Object.keys(colors)[randomIndex];
+var randomColor = colors[randomKey];
+
 particleSettings.particles.color.value = randomColor;
+particleSettings.particles.shape.stroke.color = randomColor;
 particlesJS("particles-js", particleSettings);
 
-document.addEventListener("DOMContentLoaded", function() {
-   var elements = document.querySelectorAll('a');
-   [].forEach.call(elements, function(value){
-     value.style.color = randomColor;
-   });
+document.addEventListener("DOMContentLoaded", function () {
+  var elements = document.querySelectorAll('a');
+   [].forEach.call(elements, function (value) {
+    value.style.color = randomColor;
+  });
 });
