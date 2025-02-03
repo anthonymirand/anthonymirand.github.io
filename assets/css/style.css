@@ -11,6 +11,12 @@ body {
   line-height: 1.3;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
+  background-image: url(../../images/operaparken_on_film.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.75);
+  background-blend-mode: lighten;
 }
 
 h1 {
